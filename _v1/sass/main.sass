@@ -1,0 +1,69 @@
+@import bootstrap
+
+$padding: 10px
+
+body
+	background-color: #ededed
+	+container-fixed //mixin
+
+	@media (min-width: $screen-sm-min)
+		width: $container-sm //Variable
+	@media (min-width: $screen-md-min)
+		width: $container-md
+	@media (min-width: $screen-lg-min)
+		width: $container-lg
+
+.site-header
+	color: white
+	background: #000
+	+make-row()
+
+	a
+		color: inherit
+		text-decoration: none
+
+.site-header__logo
+	padding: $padding
+	background-color: pink
+	+make-sm-column(3)
+	+make-xs-column(6)
+
+.site-header__nav
+	padding: $padding
+	background-color: purple
+	+make-sm-column(9)
+	+make-xs-column(6)
+	
+
+.site-content
+	padding: 10px 20px 20px
+	background-color: #FFF
+	+make-row()
+
+.site-content__featured
+	+make-sm-column(12)
+
+
+.site-widgets
+	padding: $padding
+	+make-row()
+
+	h2 
+		font-size: 16px
+
+.site-widgets__widget
+	background: #ddd
+	border: 1px solid #999
+	+make-sm-column(4)
+
+
+.site-footer
+	background: #ddd
+	padding: 20px
+	+make-row()
+
+.site-footer__info 
+	+make-sm-column(4)
+
+
+
