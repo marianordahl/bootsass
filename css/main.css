@@ -5632,4 +5632,8 @@ body {
   body:after {
     clear: both; }
 
+h1 {
+  font-size: 50px;
+  font-family: journal; }
+
 /*# sourceMappingURL=main.css.map */
