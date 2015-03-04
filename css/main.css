@@ -5632,4 +5632,8 @@ body {
   body:after {
     clear: both; }
 
+h1 {
+  font-size: 60px;
+  padding: 20px 0; }
+
 /*# sourceMappingURL=main.css.map */
